@@ -9,7 +9,7 @@
 cd /tmp
 git clone https://github.com/prometheus-community/jiralert.git
 cd jiralert/
-git fetch origin pull/611/head:pull_189
+git fetch origin pull/189/head:pull_189
 git checkout pull_189
 go build ./cmd/jiralert
 mv ./jiralert /go/bin/
