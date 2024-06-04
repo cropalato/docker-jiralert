@@ -3,7 +3,7 @@ name: ci
 on:
   push:
     branches:
-      - "main"
+      - "pr189"
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
       -
         name: Set Release
         run: |
-          echo "DOCKER_TAG=master_$(date +%s)" >> $GITHUB_ENV
+          echo "DOCKER_TAG=pr189_$(date +%s)" >> $GITHUB_ENV
       -
         name: Checkout
         uses: actions/checkout@v4
